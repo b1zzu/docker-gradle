@@ -5,7 +5,7 @@ CMD ["gradle"]
 ENV GRADLE_HOME /opt/gradle
 ENV GRADLE_VERSION 5.1
 
-ARG GRADLE_DOWNLOAD_SHA256=7506638a380092a0406364c79d6c87d03d23017fc25a5770379d1ce23c3fcd4d
+ARG GRADLE_DOWNLOAD_SHA256=7b8a8b9cce0406733d2d3fab3874386c530657c73c3f4e9a3837d081e26060d8
 RUN set -o errexit -o nounset \
     && echo "Downloading Gradle" \
     && wget --no-verbose --output-document=gradle.zip "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-all.zip" \
